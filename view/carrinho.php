@@ -24,7 +24,7 @@
                
                
                 ?>
-                <div class="col-md-8">
+                <div class="col-md-8 col-sm-1">
                 <h2 class="display-6 text-center mt-2"> Meus pedidos</h2>
                 <hr style="color:cadetblue">
              <?php
