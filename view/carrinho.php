@@ -18,36 +18,36 @@
                 </div>
             </div>
 
-            <?php
-                // Fim HTML
-            } else {
-               
-               
-                ?>
-                <div class="col-md-8 col-sm-1">
+        <?php
+            // Fim HTML
+        } else {
+
+
+            ?>
+            <div class="col-md-8 col-sm-1">
                 <h2 class="display-6 text-center mt-2"> Meus pedidos</h2>
                 <hr style="color:cadetblue">
-             <?php
-                foreach ($carrinho->getItems() as $item) {
+                <?php
+                    foreach ($carrinho->getItems() as $item) {
 
-                    $produto = $item->getProduto();
-                    $linkRemove = "http://localhost/projetomvc2/carrinho/remover/" . $produto->getPk_produto();
+                        $produto = $item->getProduto();
+                        $linkRemove = "http://localhost/projetomvc2/carrinho/remover/" . $produto->getPk_produto();
 
-                    // Inicio HTML
+                        // Inicio HTML
 
-                    ?>
+                        ?>
 
 
-                                
-                <div class="row mb-2 ">
-                
-                <div class="col-md-3 p-0">
-                    <div class="card">
-                        <img class="card-img-top" src="<?php echo $url . '/View/img/produtos/' . $produto->getImagem(); ?>" alt="Imagem de capa do card">
-                    </div>
-                </div>
 
-                <div class="cold-md-4 ">
+                    <div class="row mb-2 ">
+
+                        <div class="col-md-3 p-0">
+                            <div class="card">
+                                <img class="card-img-top" src="<?php echo $url . '/View/img/produtos/' . $produto->getImagem(); ?>" alt="Imagem de capa do card">
+                            </div>
+                        </div>
+
+                        <div class="cold-md-4 ">
 
                             <div class="card card-carrinho" style="width: 18rem;">
                                 <div class="card-body  ">
@@ -81,30 +81,30 @@
 
                             </div>
                         </div>
-                        
-                </div>
-                <hr style="color:cadetblue">
-                
-                    
-                    
-            <?php
-                    // Fim HTML
 
-                }
-
-               ?>
-                </div>
-                <div class="col-md-4">
-                        <h2 class="display-5"> Total da Compra:</h2>
                     </div>
-                </div>
+                    <hr style="color:cadetblue">
+
+
 
                 <?php
+                        // Fim HTML
 
-            }
+                    }
 
-            ?>
-            
+                    ?>
+            </div>
+            <div class="col-md-4">
+                <h2 class="display-5"> Total da Compra:</h2>
+            </div>
     </div>
 
-    <?php include "footer.php" ?>
+<?php
+
+}
+
+?>
+
+</div>
+
+<?php include "footer.php" ?>
